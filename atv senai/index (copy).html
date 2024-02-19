@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+  <title>Horários do Brasil</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="refresh" content="10"> -->
+  <link rel="stylesheet" href="estilo.css">
+  <!-- Código CSS -->
+  <style>
+    td{ text-align: center;}
+    body{background-color: #d7f9f7;}
+    h2{text-align: center;}
+    h1{text-align: center;}
+    links{text-align: center;}
+    #hBrasilia{text-align: center;}
+    #hManaus{text-align: center;}
+    .centro{text-align:center;}
+    #iconeZap {
+        display: inline-block;            
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background-size: 100% 100%; 
+        background-image: url("[URL-DO-ICONE]");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #iconeEmail{
+        display: inline-block;            
+        width: 50px;
+        height: 40px;
+        margin: 5px;
+        background-size: 100% 100%; 
+        background-image: url("[URL-DO-ICONE]");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #butaoTopo{
+      width: 10px;
+      text-align:center;
+    }
+    .titulodaPagina{
+      text-align: center;
+      font-size: 50px;
+    }
+    .tabelaHoras{ 
+      text-align: center;
+      background-position: center;
+      
+    }
+
+    .menuSite{
+      text-align: center;
+      display: inline;
+    }
+
+    .lista1{
+      background-color: #d6d6d6;
+      width: 50%;
+      padding: 10px 12px;
+      text-align: center;   
+      border-color:  blue; 
+      border-top: 2px solid black;
+    }
+
+    header{
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-position: center;
+      
+    }
+    
+  </style>
+
+  
+</head>
+<body>
+  <!--Titulo da página-->
+  <h1 class="titulodaPagina">Horas no Brasil</h1>
+  <table border="1" align="center" class="tabelaHoras">
+  <!--Titulo da tabela-->
+    <h2>Horas</h2>
+    <!--Cabeçalho da tabela-->
+    <thead>
+      <th>Fernando De Noronha</th>
+      <th>Brasília</th>
+      <th>Amazonas</th>
+      <th>Acre</th>
+    </thead>
+    <!--Informações dentro da tabela-->
+    <tr>
+      <td>14:25</td>
+      <td>13:25</td>
+      <td>12:25</td>
+      <td>11:25</td>
+      
+    </tr>
+    <!--Rodape da tabela-->
+    <tfoot style="width:100%" id="rodape">
+      <tr>
+      <th>Fernando De Noronha</th>
+      <th>Brasília</th>
+      <th>Amazonas</th>
+      <th>Acre</th>
+      </tr>
+    </tfoot>
+  </table>
+  <!--Link que redireciona para um site com o horário ao vivo de Brasília-->
+  <h2>Horas Agora em Brasília</h2>
+  <p id="hBrasilia"><a href="https://www.horariodebrasilia.org/">Horário de Brasília</a></p>
+  <!--Link que redireciona para um site com o horário ao vivo de Manaus-->
+  <h2>Horas Agora em Manaus</h2>
+  <p id="hManaus"><a href="https://time.is/pt_br/Manaus" target="_blank">Horário de Manaus</a></p>
+  <!--Link que realiza o download de uma imagem informando os fuso horários do Brasil-->
+  <p class="centro"><a href="fusoHorariosDoBrasil.jpg" download>Baixar Lista de Fusos Horários do Brasil</a></p>
+
+  <h3 class="centro" id="aFuturas">Atualizações Futuras</h3>  
+  <p class="centro">Os horários presentes na tabela serão atualizados<br> conforme o programador entrar para redefinir, mas em futuras atualizações do site, <br>entrará em vigor a atualização das horas em tempo real.</p>
+
+  <h3 class="centro" id="pqsFuso">Para que serve o Fuso Horário?</h3>  
+  <p class="centro">Para que serve os Fuso Horários:<br> O sistema de fusos horários surgiu com o objetivo de padronizar <br>a contagem das horas no mundo, facilitando assim as comunicações, <br>o comércio internacional e as viagens.<br> O marco zero para essa contagem é o Meridiano de Greenwich (0°), <br>que fica no centro do fuso horário inicial.</p>
+  
+  <h3 class="centro" id="oqVerao">O que é o horário de verão?</h3>
+  <p class="centro">O horário de verão consiste no aproveitamento máximo da luz solar<br> a fim de economizar no consumo de energia elétrica. <br>Essa medida é adotada em diversos países. <br>O horário de verão é uma medida adotada em alguns países <br>que buscam reduzir o consumo de energia elétrica.</p>
+
+  <!--Imagem do Relógio-->
+  <p class="centro"><img src="relogio.png" alt="relogio"></p>
+
+  <!--Lista de seções-->
+  <ul class="menuSite">
+    <li class="lista1"><a href="#tabelaHoras">Tabela de Horas</a></li> 
+    <li class="lista1"><a href="#hBrasilia">Horas Agora em Brasília</a></li>
+    <li class="lista1"><a href="#hManaus">Horas Agora em Manaus</a></li>  
+    <li class="lista1"><a href="#aFuturas">Atualizações Futuras</a></li>
+    <li class="lista1"><a href="#pqsFuso">Para que serve o Fuso Horário?</a></li>
+    <li class="lista1"><a href="#oqVerao">O que é o horário de verão?</a></li>
+    <li class="lista1"><a href="#iconeZap">Contatos</a></li>
+  </ul>
+  <p></p>
+  
+  <!--Link que redireciona para uma conversa no Whatsapp-->
+  <table align="center">
+    <tr>
+      <td><img src="iconeZap.png" alt="" id="iconeZap"></td>
+      <td><p class="centro"><a href="https://wa.me/qr/CIF7XT6Z2CHGA1"       target="_blank">Chama no Zap</a></p></td>
+    </tr>
+  </table>
+  <!--Link que redireciona para uma escrita de email-->
+  <table align="center">
+    <tr>
+      <td><img src="iconeGmail.jpg" id="iconeEmail"></td>
+      <td><p class="centro"><a href="mailto:0001019340@senaimgaluno.com.br">Chama no Email</a></p></td>
+    </tr>
+  </table>
+
+  <!--Botão para subir ao topo da página-->
+  <p class="centro">
+    <button id="botaoTopo">
+      <a href="#">TOPO</a>
+    </button>
+  </p>
+
+  <!--Cabeçalho Fixo-->
+ <!-- <header>
+  <h1>Título</h1>
+  <nav>
+   <ul>
+    <li>PRIMEIRO</li>
+    <li>SEGUNDO</li>
+    <li>TERCEIRO</li>
+   </ul>
+  </nav>
+   </header> -->
+  
+</body>
+</html>
